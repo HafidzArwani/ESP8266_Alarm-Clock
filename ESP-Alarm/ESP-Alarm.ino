@@ -26,9 +26,9 @@ void disp() {
   timeinfo = localtime(&rawtime);
 
   static uint8_t menits;
-  //  uint8_t hari  = timeinfo->tm_wday;
-  uint8_t jam   = timeinfo->tm_hour;
-  uint8_t menit = timeinfo->tm_min;
+  //  uint8_t hari  = timeinfo->tm_wday;  //Getting day 
+  uint8_t jam   = timeinfo->tm_hour; //Getting hour
+  uint8_t menit = timeinfo->tm_min;  //Getting minutes
 
   char buffer[20];
   char date[20];
@@ -36,13 +36,13 @@ void disp() {
   if (timeinfo->tm_year == 70) return;
   if (menits == menit) return;
 
-  strftime(buffer, 20, "  %I:%M %p  ", timeinfo);
-  strftime(date, 20, "%a, %e %b %g", timeinfo);
+  strftime(buffer, 20, "  %I:%M %p  ", timeinfo); //Convert the time to formatted form
+  strftime(date, 20, "%a, %e %b %g", timeinfo);   //Convert the date to formatted form
 
   lcd.setCursor(0, 0);
-  lcd.print("\x2d\x7e");
+  lcd.print("\x2d\x7e");  //printing right arrow and en dash
   lcd.print(buffer);
-  lcd.print("\x7f\x2d");
+  lcd.print("\x7f\x2d");  //printing left arrow and en dash
   lcd.setCursor(1, 1);
   lcd.print(date);
 
