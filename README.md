@@ -12,6 +12,8 @@ Still dealing with IRAM runout at certain process i.e. when i use two or more so
 # Reference
 1. https://github.com/earlephilhower/ESP8266Audio
 2. https://github.com/schmurtzm/MrDiy-Audio-Notifier
+3. https://cplusplus.com/reference/ctime/strftime/
+4. https://www.martyncurrey.com/wp-content/uploads/2017/03/LCDs_12_CharSet_01.jpg
 
 # Personal Note
 I know that my English is still awful. But trust me that I learn this language diligently, even though just at writing
