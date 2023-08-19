@@ -10,8 +10,8 @@ It's somekind of project using WEMOS D1 Mini as digital Clock that can produce r
 Still dealing with IRAM runout at certain process i.e. when i use two or more sound to produce it get error. (currently i just use one), Then when I the audio generator process to loop function it get error again and stuck at void setup or when I use Bigfont to display the time, the sound won't come out, but the display working.
 
 # Reference
-1 https://github.com/earlephilhower/ESP8266Audio
-2 https://github.com/schmurtzm/MrDiy-Audio-Notifier
+1. https://github.com/earlephilhower/ESP8266Audio
+2. https://github.com/schmurtzm/MrDiy-Audio-Notifier
 
 # Personal Note
 I know that my English is still awful. But trust me that I learn this language diligently, even though just at writing
