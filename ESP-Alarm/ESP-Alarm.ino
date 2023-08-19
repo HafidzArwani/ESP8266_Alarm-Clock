@@ -8,6 +8,8 @@
 #define NTP_SERVER     "ntp.bsn.go.id"
 #define UTC_OFFSET     25200
 #define UTC_OFFSET_DST 0
+#define SSID "store your wifi SSID here"
+#define PASSWORD "store your wifi PASS here"
 
 LCD_I2C lcd(0x27, 16, 2);
 AudioGeneratorMP3 *mp3 = NULL;
@@ -63,7 +65,7 @@ void spinner() {
 void setup() {
   Serial.begin(115200);
   SPIFFS.begin();
-  WiFi.begin("Kos Rendang", "assalamualaikum");
+  WiFi.begin("SSID", "PASSWORD");
 
   lcd.begin();
   lcd.backlight();
