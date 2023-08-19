@@ -1,5 +1,5 @@
 # ESP8266_Alarm-Clock
-It's somekind of project using WEMOS D1 Mini as digital Clock that can produce ringtone as alarm sound, but there are still many bugs in this code
+It's somekind of project using WEMOS D1 Mini as digital Clock that can produce ringtone as alarm sound, use network time protocol to get the datetime data and storing the .mp3 file on SPIFFS, but there are still many bugs in this code
 
 # Component that used in this project
 1. WEMOS D1 Mini
